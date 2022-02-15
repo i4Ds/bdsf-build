@@ -7,11 +7,11 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="23" />
+          <option name="caretOffset" value="39" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/bdsf/conda_build_config.yml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="120" />
+          <option name="caretOffset" value="0" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/bdsf/build.sh" />
         </OpenedFileInfo>
         <OpenedFileInfo>
@@ -19,7 +19,7 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/.github/workflows/build_conda.yml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="765" />
+          <option name="caretOffset" value="614" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/bdsf/meta.yaml" />
         </OpenedFileInfo>
       </list>

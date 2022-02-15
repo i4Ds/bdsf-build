@@ -26,13 +26,13 @@ requirements:
     - astropy
     - numpy>1.16
     - pip
-    - python
+    - python {{ python }}
     - scipy
   run:
     - boost
     - astropy
     - numpy>1.16
-    - python
+    - python {{ python }}
     - scipy
     - matplotlib
     - ipython
