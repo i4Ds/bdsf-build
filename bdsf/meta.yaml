@@ -24,15 +24,15 @@ requirements:
   host:
     - boost
     - astropy
-    - numpy>1.16
+    - numpy
     - pip
-    - python {{ python }}
+    - python
     - scipy
   run:
     - boost
     - astropy
-    - numpy>1.16
-    - python {{ python }}
+    - numpy
+    - python
     - scipy
     - matplotlib
     - ipython
