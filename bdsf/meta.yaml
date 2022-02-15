@@ -35,14 +35,12 @@ requirements:
     - python
     - scipy
     - matplotlib
+    - ipython
 
 test:
   imports:
     - bdsf
     - bdsf.nat
-  commands:
-    - pybdsf --help
-    - pybdsm --help
 
 about:
   home: "https://github.com/lofar-astron/PyBDSF"
