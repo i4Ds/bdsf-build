@@ -20,6 +20,7 @@ jobs:
         run: |
           conda config --append channels conda-forge
           conda install -c anaconda conda-build
+          conda install -c anaconda anaconda
       - name: Build conda
         run: |
           cd bdsf
