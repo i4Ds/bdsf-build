@@ -15,12 +15,12 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/.github/workflows/build_conda.yml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="31" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/bdsf/conda_build_config.yaml" />
+          <option name="caretOffset" value="731" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/bdsf/meta.yaml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="668" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/bdsf/meta.yaml" />
+          <option name="caretOffset" value="31" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/bdsf/conda_build_config.yaml" />
         </OpenedFileInfo>
       </list>
     </option>
