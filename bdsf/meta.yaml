@@ -17,9 +17,9 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }} # [not osx]
-    - {{ compiler('cxx') }} # [not osx]
-    - {{ compiler('gfortran') }} # [not osx]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ compiler('gfortran') }}
   host:
     - boost
     - astropy
