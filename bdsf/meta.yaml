@@ -15,12 +15,11 @@ build:
     - pybdsf = bdsf.pybdsf:main [ishell]
     - pybdsm = bdsf.pybdsf:main [ishell]
 
-
 requirements:
   build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - {{ compiler('gfortran') }}
+    - {{ compiler('c') }} # [not osx]
+    - {{ compiler('cxx') }} # [not osx]
+    - {{ compiler('gfortran') }} # [not osx]
   host:
     - boost
     - astropy
@@ -41,6 +40,7 @@ test:
   imports:
     - bdsf
     - bdsf.nat
+
 
 about:
   home: "https://github.com/lofar-astron/PyBDSF"
