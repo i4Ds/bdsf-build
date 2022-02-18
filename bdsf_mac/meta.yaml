@@ -6,8 +6,7 @@ package:
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 133637bc7def8af3d43ec741956a492281076c339575ed7ec3bb58a0eb4ca842
+  path: ../.
 
 build:
   number: 0
@@ -16,19 +15,15 @@ build:
     - pybdsm = bdsf.pybdsf:main [ishell]
 
 requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - {{ compiler('gfortran') }}
   host:
-    - boost
+    - libboost
     - astropy
     - numpy >=1.16
     - pip
     - python
     - scipy
   run:
-    - boost
+    - libboost
     - astropy
     - numpy >=1.16
     - python
@@ -46,7 +41,7 @@ about:
   home: "https://github.com/lofar-astron/PyBDSF"
   license: GPL-3.0
   license_family: GPL3
-  license_file: LICENSE
+  license_file:
   summary: "Blob Detection and Source Finder"
   doc_url: https://www.astron.nl/citt/pybdsf/
   dev_url: https://github.com/lofar-astron/PyBDSF

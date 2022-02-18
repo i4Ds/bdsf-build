@@ -12,9 +12,6 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           auto-update-conda: true
-      - name: Install brew dep
-        run: |
-          brew install gfortran
       - name: Install Conda Build
         run: |
           conda config --append channels conda-forge
