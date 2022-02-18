@@ -12,6 +12,9 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           auto-update-conda: true
+      - name: Test
+        run: |
+          sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
       - name: Install Conda Build
         run: |
           conda config --append channels conda-forge
