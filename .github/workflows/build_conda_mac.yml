@@ -14,7 +14,8 @@ jobs:
           auto-update-conda: true
       - name: Test
         run: |
-          sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+          sudo xcode-select -p
+          #sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
       - name: Install Conda Build
         run: |
           conda config --append channels conda-forge
