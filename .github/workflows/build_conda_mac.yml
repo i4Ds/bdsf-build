@@ -15,7 +15,7 @@ jobs:
       - name: Test
         run: |
           sudo xcode-select -p
-          sudo xcode-select --switch /Applications/Xcode_10.3.app
+          sudo xcode-select --switch /Applications/Xcode_10.4.app
           sudo xcode-select -p
       - name: Install Conda Build
         run: |
