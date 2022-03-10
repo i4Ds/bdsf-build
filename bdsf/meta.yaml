@@ -28,7 +28,7 @@ requirements:
     - python
     - scipy
   run:
-    - boost=1.73
+    - boost
     - astropy
     - numpy >=1.16
     - python
