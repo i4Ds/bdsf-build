@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies Linux
         run: |
           apt-get update
-          apt-get install binutils
+          apt-get install -y binutils
       - name: Install Conda Build
         run: |
           conda config --append channels conda-forge
