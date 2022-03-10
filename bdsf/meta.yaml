@@ -21,14 +21,14 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('gfortran') }}
   host:
-    - boost>=1.74
+    - boost=1.77
     - astropy
     - numpy >=1.16
     - pip
     - python
     - scipy
   run:
-    - boost>=1.74
+    - boost=1.77
     - astropy
     - numpy >=1.16
     - python
