@@ -5,31 +5,26 @@ on: [ push ]
 jobs:
   build_and_upload:
     runs-on: ubuntu-20.04
+    container: ghcr.io/i4ds/mambabuild-docker:latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Install Conda
-        uses: conda-incubator/setup-miniconda@v2
-        with:
-          auto-update-conda: true
       - name: Install dependencies Linux
         run: |
-          sudo apt-get update
-          sudo apt-get install binutils
+          apt-get update
+          apt-get install binutils
       - name: Install Conda Build
         run: |
           conda config --append channels conda-forge
-          conda install -c anaconda conda-build
-          conda install -c anaconda anaconda
       - name: Build conda
         run: |
           cd bdsf
-          conda build .
+          conda mambabuild .
       - name: Publish to Conda Linux
         shell: bash -l {0}
         run: |
           conda activate base
-          anaconda -t ${{ secrets.ANACONDA_SECRET }} upload /usr/share/miniconda/conda-bld/linux-64/bdsf-*.tar.bz2 --force
+          anaconda -t ${{ secrets.ANACONDA_SECRET }} upload /opt/conda/conda-bld/linux-64/bdsf-*.tar.bz2 --force
 
   install_and_test:
     needs: build_and_upload
