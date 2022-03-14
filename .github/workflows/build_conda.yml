@@ -19,7 +19,7 @@ jobs:
       - name: Build conda
         run: |
           cd bdsf
-          conda mambabuild .
+          conda mambabuild -c conda-forge .
       - name: Publish to Conda Linux
         shell: bash -l {0}
         run: |
