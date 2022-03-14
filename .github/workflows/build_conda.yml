@@ -41,11 +41,6 @@ jobs:
         run: |
           conda config --append channels conda-forge
           
-          conda create -n testpy36 python=3.6
-          conda activate testpy36
-          conda install -c i4ds bdsf
-          python -c "import bdsf"
-          
           conda create -n testpy37 python=3.7
           conda activate testpy37
           conda install -c i4ds bdsf
