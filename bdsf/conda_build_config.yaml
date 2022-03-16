@@ -1,5 +1,8 @@
 python:
   - 3.8
 
+numpy:
+  - 1.22
+
 bcpp:
   - 1.74.0 h6cacc03_7
