@@ -22,7 +22,8 @@ requirements:
     - {{ compiler('gfortran') }}
   host:
     - boost
-    - boost-cpp {{ bcpp }}
+    - boost-cpp
+#    - boost-cpp {{ bcpp }}
     - astropy
     - numpy {{ numpy }}
     - pip
@@ -30,7 +31,8 @@ requirements:
     - scipy
   run:
     - boost
-    - boost-cpp {{ bcpp }}
+    - boost-cpp
+#    - boost-cpp {{ bcpp }}
     - astropy
     - numpy {{ numpy }}
     - python
