@@ -1,6 +1,9 @@
 name: Build Conda Package Mac
 
-on: [ push ]
+on:
+  push:
+    branches:
+      - mac-os
 
 jobs:
   build_and_upload:
