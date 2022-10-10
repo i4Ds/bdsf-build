@@ -15,8 +15,8 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           auto-update-conda: true
-      - name: Test
-        run: |
+#      - name: Test
+#        run: |
 #          sudo xcode-select -p
 #          sudo xcode-select --switch /Applications/Xcode_11.7.app #works for python 3.9
 #          sudo xcode-select -p
