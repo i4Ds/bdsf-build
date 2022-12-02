@@ -1,4 +1,4 @@
-{% set name = "bdsf" %}
+{% set name = "pyBDSF" %}
 {% set version = "1.10.1" %}
 
 package:
@@ -6,32 +6,34 @@ package:
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 133637bc7def8af3d43ec741956a492281076c339575ed7ec3bb58a0eb4ca842
+  git_url: https://github.com/lofar-astron/PyBDSF.git
+  git_tag: v1.10.1
 
 build:
-  number: 0
-  entry_points:
-    - pybdsf = bdsf.pybdsf:main [ishell]
-    - pybdsm = bdsf.pybdsf:main [ishell]
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('gfortran') }}
-  host:
-    - boost {{ bcpp }}
-    - astropy
-    - numpy {{ numpy }}
+    - python {{ python }}
     - pip
-    - python
-    - scipy
+    - numpy {{ numpy }}
+    - boost
+    
+  host:
+    - python {{ python }}
+    - numpy {{ numpy }}
+    - boost
+    - astropy
+    - matplotlib
+    
   run:
-    - boost {{ bcpp }}
+    - python {{ python }}
+    - boost
     - astropy
     - numpy {{ numpy }}
-    - python
     - scipy
     - matplotlib
     - ipython
@@ -39,8 +41,6 @@ requirements:
 test:
   imports:
     - bdsf
-    - bdsf.nat
-
 
 about:
   home: "https://github.com/lofar-astron/PyBDSF"
