@@ -20,18 +20,18 @@ requirements:
     - python {{ python }}
     - pip
     - numpy {{ numpy }}
-    - boost
+    - boost {{ boost }}
     
   host:
     - python {{ python }}
     - numpy {{ numpy }}
-    - boost
+    - boost {{ boost }}
     - astropy
     - matplotlib
     
   run:
     - python {{ python }}
-    - boost
+    - boost {{ boost }}
     - astropy
     - numpy {{ numpy }}
     - scipy

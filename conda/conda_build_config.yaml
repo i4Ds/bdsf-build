@@ -4,3 +4,7 @@ python:
 
 numpy:
   - 1.22
+
+boost:
+  - 1.80
+  
