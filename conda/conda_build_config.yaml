@@ -6,6 +6,5 @@ numpy:
   - 1.22
 
 boost:
-  - 1.73
-  - 1.80
+  - 1.74 # casacore<--python-casacore<--rascil<--karabo needs boost 1.74
   
